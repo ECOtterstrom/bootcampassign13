@@ -44,7 +44,7 @@ router.put("/api/burgerss/:id", function(req, res) {
   });
 });
 
-router.delete("/api/burgerss/:id", function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   burgers.delete(condition, function(result) {
